@@ -57,7 +57,7 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #0056b3;
+    background-color: #C49D83;
     transform: scale(1.1);
 }
 .apropos-detail {
@@ -101,7 +101,7 @@ body {
 
 .apropos-detail .btn {
     display: inline-block;
-    background: #0056b3;
+    background: black;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -111,6 +111,6 @@ body {
 }
 
 .apropos-detail .btn:hover {
-    background: #003d80;
+    background: #C49D83;
     transform: translateY(-5px);
 }

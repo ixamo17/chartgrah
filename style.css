@@ -56,7 +56,7 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #0056b3;
+    background-color: #C49D83;
     transform: scale(1.1);
 }
 
@@ -88,7 +88,7 @@ body {
 }
 
 .accueil-content .btn {
-    background-color: #0056b3;
+    background-color: black;
     color: white;
     padding: 15px 30px;
     font-size: 1.2em;
@@ -98,7 +98,7 @@ body {
 }
 
 .accueil-content .btn:hover {
-    background-color: #003d80;
+    background-color: #C49D83;
     transform: translateY(-5px);
 }
 
@@ -141,7 +141,7 @@ section.appear {
 section h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #0056b3;
+    color: black;
 }
 
 /* Sections encadrées */
@@ -150,9 +150,9 @@ section h2 {
 .contact-section .content {
     max-width: 800px;
     margin: auto;
-    background-color: white;
+    background-color: #C49D83;
     padding: 20px;
-    border: 2px solid #0056b3;
+    border: 2px solid #C49D83;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
@@ -167,7 +167,7 @@ section h2 {
 .apropos-section .btn,
 .integration-section .btn {
     display: inline-block;
-    background: #0056b3;
+    background: black;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -178,14 +178,15 @@ section h2 {
 
 .apropos-section .btn:hover,
 .integration-section .btn:hover {
-    background: #003d80;
+    background: #C49D83;
+    border:2px solid black;
     transform: translateY(-5px);
 }
 
 /* Section Galerie */
 .galerie-section {
     padding: 50px 20px;
-    background-color: #f9f9f9;
+    background-color: #C49D83;
 }
 
 .galerie-grid {
@@ -224,7 +225,7 @@ section h2 {
 /* Section Témoignages */
 .temoignages-section {
     padding: 50px 20px;
-    background-color: #f0f0f0;
+    background-color: #C49D83;
 }
 
 .temoignage {
@@ -254,16 +255,16 @@ section h2 {
 
 .contact-section p {
     font-size: 1em;
-    color: #333;
+    color: black;
 }
 
 .contact-section .content {
     max-width: 800px;
     margin: auto;
-    background: white;
+    background: #C49D83;
     padding: 20px;
     border-radius: 10px;
-    border: 2px solid #0056b3;
+    border: 2px solid #C49D83;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -292,7 +293,7 @@ section h2 {
 }
 
 .contact-section button {
-    background-color: #0056b3;
+    background-color: black;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -303,18 +304,19 @@ section h2 {
 }
 
 .contact-section button:hover {
-    background-color: #003d80;
+    background-color: #C49D83;
+    border: black;
     transform: translateY(-5px);
 }
 
 .contact-info i {
     margin-right: 10px;
-    color: #0056b3;
+    color: black;
 }
 
 /* Pied de page */
 footer {
-    background: #003d80;
+    background: #C49D83;
     color: white;
     text-align: center;
     padding: 20px;
@@ -326,7 +328,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #0056b3;
+    background-color: #C49D83;
     color: white;
     border: none;
     padding: 10px 15px;
@@ -339,7 +341,7 @@ footer {
 }
 
 #back-to-top:hover {
-    background-color: #003d80;
+    background-color: #4f3727;
     transform: translateY(-5px);
 }
 

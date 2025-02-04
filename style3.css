@@ -56,7 +56,7 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #0056b3;
+    background-color: #C49D83;
     transform: scale(1.1);
 }
 .galerie-detail,
@@ -75,6 +75,26 @@ body {
     color: black;
     margin-bottom: 20px;
 }
+.galerie-detail .btn,
+.temoignages-detail .btn,
+.contact-detail .btn{
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.galerie-detail .btn:hover,
+.temoignages-detail .btn:hover,
+.contact-detail .btn:hover {
+    background: #C49D83;
+    transform: translateY(-5px);
+}
+
 
 .galerie-detail p,
 .temoignages-detail p,
@@ -148,7 +168,7 @@ body {
 
 .contact-detail label {
     font-weight: bold;
-    color: #333;
+    color: beige;
 }
 
 .contact-detail input,
@@ -165,7 +185,7 @@ body {
 }
 
 .contact-detail button {
-    background-color: #0056b3;
+    background-color: black;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -176,7 +196,7 @@ body {
 }
 
 .contact-detail button:hover {
-    background-color: #003d80;
+    background-color: red;
     transform: translateY(-5px);
 }
 
@@ -186,5 +206,5 @@ body {
 
 .contact-info i {
     margin-right: 10px;
-    color: #0056b3;
+    color: black;
 }
