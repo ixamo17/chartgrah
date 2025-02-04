@@ -1,0 +1,116 @@
+/* Section À propos détaillée */
+body, h1, h2, h3, p, ul, li, a, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #f7f7f7;
+    background-color: #f9f9f9;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('images/sos.jpeg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* En-tête */
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.header-text h1 {
+    font-size: 2em;
+    color: white;
+}
+
+/* Navbar similaire à la page home */
+.navbar {
+    display: flex;
+    gap: 20px;
+    margin-right: 40px;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+.apropos-detail {
+    padding: 100px 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+
+.apropos-detail h2 {
+    font-size: 2.5em;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.apropos-detail h3 {
+    font-size: 1.8em;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.apropos-detail p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #FAF2EA;
+    margin-bottom: 20px;
+}
+
+.apropos-detail ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.apropos-detail ul li {
+    font-size: 1.1em;
+    color: #FAF2EA;
+    margin-bottom: 10px;
+}
+
+.apropos-detail .btn {
+    display: inline-block;
+    background: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.apropos-detail .btn:hover {
+    background: #003d80;
+    transform: translateY(-5px);
+}

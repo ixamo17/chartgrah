@@ -6,6 +6,7 @@
     <title>Conception de la Charte Graphique</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header class="home-header">
@@ -13,28 +14,79 @@
             <h1><i>coloryourlife</i></h1>
         </div>
         <nav class="navbar">
-            <a href="#apropos" aria-label="Aller à la section À propos">À propos</a>
-            <a href="#integration" aria-label="Aller à la section Intégration dans le développement web">Intégration dans le développement web</a>
-            <a href="#contact" aria-label="Aller à la section Contact">Contact</a>
+            <a href="home.html" aria-label="Aller à la section Accueil">Accueil</a>
+            <a href="apropos.html" aria-label="Aller à la section À propos">À propos</a>
+            <a href="integration.html" aria-label="Aller à la section Intégration">Intégration</a>
+            <a href="galerie.html" aria-label="Aller à la section Galerie">Galerie</a>
+            <a href="temoigne.html" aria-label="Aller à la section Témoignages">Témoignages</a>
+            <a href="contacter.html" aria-label="Aller à la section Contact">Contact</a>
         </nav>
     </header>
 
+    <!-- Section Accueil -->
+    <section id="accueil" class="accueil-section">
+        <div class="accueil-content">
+            <h1>Bienvenue sur <i>coloryourlife</i></h1>
+            <p>Découvrez comment une charte graphique peut transformer votre site web.</p>
+            <a href="" class="btn">Explorer</a>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
     <section id="apropos" class="apropos-section">
         <div class="content">
             <h2>À propos</h2>
             <p>Bienvenue sur mon site dédié à la charte graphique et son rôle essentiel dans le développement web. Mon objectif est de montrer comment une identité visuelle bien pensée peut transformer un simple site en une expérience mémorable pour les utilisateurs.</p>
-            <a href="#" class="btn">Lire la suite</a>
+            <a href="apropos.html" class="btn">Lire la suite</a>
         </div>
     </section>
 
+    <!-- Section Intégration -->
     <section id="integration" class="integration-section">
         <div class="content">
             <h2>Intégration dans le développement web</h2>
             <p>Une charte graphique, bien conçue, sert de guide visuel pour garantir la cohérence et l’identité d’un site web. Dans cette section, nous explorons les étapes pratiques pour transformer une charte graphique en un design web fonctionnel et interactif.</p>
-            <a href="#" class="btn">Lire la suite</a>
+            <a href="integration.html" class="btn">Lire la suite</a>
         </div>
     </section>
 
+    <!-- Section Galerie -->
+    <section id="galerie" class="galerie-section">
+        <div class="content">
+            <h2>Galerie</h2>
+            <div class="galerie-grid">
+                <div class="galerie-item">
+                    <img src="images/exemple-charte-graphique.jpeg" alt="Exemple de charte graphique 1">
+                    <p>Exemple de charte graphique pour un site e-commerce.</p>
+                </div>
+                <div class="galerie-item">
+                    <img src="images/modele-portfolio-design-plat-details_52683-78815.avif" alt="Exemple de charte graphique 2">
+                    <p>Charte graphique moderne pour un portfolio créatif.</p>
+                </div>
+                <div class="galerie-item">
+                    <img src="images/images.jpg" alt="Exemple de charte graphique 3">
+                    <p>Design minimaliste pour un site corporate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section id="temoignages" class="temoignages-section">
+        <div class="content">
+            <h2>Témoignages</h2>
+            <div class="temoignage">
+                <p>"La charte graphique proposée par coloryourlife a transformé notre site web en une expérience utilisateur incroyable !"</p>
+                <p class="auteur">- A</p>
+            </div>
+            <div class="temoignage">
+                <p>"Un travail professionnel et créatif. Je recommande vivement !"</p>
+                <p class="auteur">- B</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
     <section id="contact" class="contact-section">
         <div class="content">
             <h3>Contact</h3>
@@ -51,17 +103,26 @@
 
                 <button type="submit">Envoyer</button>
             </form>
-            <p>Email : colorurlife@gmail.com</p>
-            <p>Téléphone : +212 6 12 34 56 78</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> colorurlife@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +212 6 12 34 56 78</p>
+            </div>
         </div>
     </section>
 
+    <!-- Pied de page -->
     <footer>
         <p>© 2025 Tous droits réservés. ISIC.</p>
     </footer>
 
+    <!-- Bouton Retour en haut -->
+    <button id="back-to-top" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Script pour les animations et le bouton Retour en haut -->
     <script>
-        // Script pour ajouter des animations aux sections lors du défilement
+        // Animation des sections au défilement
         const sections = document.querySelectorAll("section");
 
         const observer = new IntersectionObserver((entries) => {
@@ -74,6 +135,21 @@
 
         sections.forEach((section) => {
             observer.observe(section);
+        });
+
+        // Bouton Retour en haut
+        const backToTopButton = document.getElementById("back-to-top");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+
+        backToTopButton.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
         });
     </script>
 </body>

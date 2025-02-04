@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - coloryourlife</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="home-header">
+        <div class="header-text">
+            <h1><i>coloryourlife</i></h1>
+        </div>
+        <nav class="navbar">
+            <a href="home.html" aria-label="Aller à la section Accueil">Accueil</a>
+            <a href="apropos.html" aria-label="Aller à la section À propos">À propos</a>
+            <a href="integration.html" aria-label="Aller à la section Intégration">Intégration</a>
+            <a href="galerie.html" aria-label="Aller à la section Galerie">Galerie</a>
+            <a href="temoigne.html" aria-label="Aller à la section Témoignages">Témoignages</a>
+            <a href="contacter.html" aria-label="Aller à la section Contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Section À propos détaillée -->
+    <section class="apropos-detail">
+        <div class="content">
+            <h2>À propos de coloryourlife</h2>
+            <p>Bienvenue sur la page détaillée de <strong>coloryourlife</strong>. Ici, nous explorons en profondeur comment une charte graphique bien conçue peut transformer votre site web en une expérience utilisateur mémorable.</p>
+            
+            <h3>Notre mission</h3>
+            <p>Notre mission est de fournir des solutions de design web innovantes et personnalisées qui reflètent l'identité unique de chaque client. Nous croyons que chaque détail compte, de la typographie aux couleurs, en passant par l'expérience utilisateur.</p>
+
+            <h3>Notre équipe</h3>
+            <p>Notre équipe est composée de designers et de développeurs passionnés, prêts à relever tous les défis pour créer des sites web à la fois beaux et fonctionnels.</p>
+
+            <h3>Notre processus</h3>
+            <ul>
+                <li><strong>Étape 1 :</strong> Consultation et analyse des besoins.</li>
+                <li><strong>Étape 2 :</strong> Création de la charte graphique.</li>
+                <li><strong>Étape 3 :</strong> Intégration dans le développement web.</li>
+                <li><strong>Étape 4 :</strong> Tests et livraison.</li>
+            </ul>
+
+            <a href="home.html" class="btn">Retour à l'accueil</a>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2025 Tous droits réservés. ISIC.</p>
+    </footer>
+
+    <!-- Bouton Retour en haut -->
+    <button id="back-to-top" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Script pour le bouton Retour en haut -->
+    <script>
+        const backToTopButton = document.getElementById("back-to-top");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+
+        backToTopButton.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+</body>
+</html>

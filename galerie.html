@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - coloryourlife</title>
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="home-header">
+        <div class="header-text">
+            <h1><i>coloryourlife</i></h1>
+        </div>
+        <nav class="navbar">
+            <a href="home.html" aria-label="Aller à la section Accueil">Accueil</a>
+            <a href="apropos.html" aria-label="Aller à la section À propos">À propos</a>
+            <a href="integration.html" aria-label="Aller à la section Intégration">Intégration</a>
+            <a href="galerie.html" aria-label="Aller à la section Galerie">Galerie</a>
+            <a href="temoigne.html" aria-label="Aller à la section Témoignages">Témoignages</a>
+            <a href="contacter.html" aria-label="Aller à la section Contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Section Galerie détaillée -->
+    <section class="galerie-detail">
+        <div class="content">
+            <h2>Galerie</h2>
+            <p>Découvrez nos réalisations en matière de chartes graphiques et de designs web.</p>
+            
+            <div class="galerie-grid">
+                <div class="galerie-item">
+                    <img src="images/exemple-charte-graphique.jpeg" alt="Exemple de charte graphique 1">
+                    <p>Charte graphique pour un site e-commerce.</p>
+                </div>
+                <div class="galerie-item">
+                    <img src="images/modele-portfolio-design-plat-details_52683-78815.avif" alt="Exemple de charte graphique 2">
+                    <p>Design moderne pour un portfolio créatif.</p>
+                </div>
+                <div class="galerie-item">
+                    <img src="images/images.jpg" alt="Exemple de charte graphique 3">
+                    <p>Style minimaliste pour un site corporate.</p>
+                </div>
+                <div class="galerie-item">
+                    <img src="images/download.jpg" alt="Exemple de charte graphique 4">
+                    <p>Charte graphique pour une application mobile.</p>
+                </div>
+            </div>
+
+            <a href="home.html" class="btn">Retour à l'accueil</a>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>© 2025 Tous droits réservés. ISIC.</p>
+    </footer>
+
+    <!-- Bouton Retour en haut -->
+    <button id="back-to-top" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Script pour le bouton Retour en haut -->
+    <script>
+        const backToTopButton = document.getElementById("back-to-top");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+
+        backToTopButton.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+</body>
+</html>
